@@ -123,7 +123,7 @@ void * popCurrent(List * list)
     list->current->prev = list->current;
     free(list->current);
 
-    return list->current->data;
+    return list->current->prev->data;
 }
 
 void cleanList(List * list) {
