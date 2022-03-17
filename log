@@ -124,3 +124,15 @@ Thu Mar 17 16:34:34 HSP 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 215787d
+Thu Mar 17 16:35:24 HSP 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function 'prevList':
+list.c:70:8: error: 'lis' undeclared (first use in this function); did you mean 'list'?
+   70 |     if(lis->current == NULL)return NULL;
+      |        ^~~
+      |        list
+list.c:70:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+443cb5e
