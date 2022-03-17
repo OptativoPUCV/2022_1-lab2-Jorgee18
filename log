@@ -27,3 +27,9 @@ Thu Mar 17 14:59:15 HSP 2022:
  tests:  1|5
 total_score: 10/70
 bf41481
+Thu Mar 17 15:00:33 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|0
+   [ INFO ] llamando a firstList
+2c8caec
