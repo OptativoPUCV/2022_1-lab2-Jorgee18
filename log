@@ -44,3 +44,9 @@ Thu Mar 17 15:01:53 HSP 2022:
  tests:  1|0
    [ INFO ] llamando a firstList
 9ef3be8
+Thu Mar 17 15:12:49 HSP 2022: 
+ list.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+ tests:  1|0
+   [ INFO ] llamando a firstList
+e8992bf
