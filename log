@@ -136,3 +136,9 @@ list.c:70:8: error: 'lis' undeclared (first use in this function); did you mean 
 list.c:70:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 443cb5e
+Thu Mar 17 16:35:37 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+b904db1
