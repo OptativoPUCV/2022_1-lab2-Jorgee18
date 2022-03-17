@@ -311,3 +311,9 @@ list.c:83:9: note: ...this statement, but the latter is misleadingly indented as
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c2836f3
+Thu Mar 17 18:40:37 HSP 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+e60e826
