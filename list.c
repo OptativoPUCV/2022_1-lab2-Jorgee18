@@ -84,7 +84,6 @@ void pushFront(List * list, void * data)
         list->tail = nodoNuevo;
         list->current = nodoNuevo;
     }
-    nodoNuevo->prev = NULL;
 
 }
 
