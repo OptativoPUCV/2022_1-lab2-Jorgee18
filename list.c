@@ -124,8 +124,7 @@ void * popCurrent(List * list)
     {
         list->current->prev = list->current;
     }
-
-
+    list->current->prev = list->current;
     free(list->current);
 
     list->current = list->head;
