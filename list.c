@@ -122,7 +122,7 @@ void * popCurrent(List * list)
 {
     Node* vector = createNode(list->current->data);
     if(list->current == NULL)
-        list->current->prev == list->current;
+        list->current->prev = list->current;
     
     list->current->next = list->current->prev;
     list->current = list->current->next;
