@@ -134,11 +134,8 @@ void * popCurrent(List * list)
             list->current->next->prev = list->current->prev;
         }
     }
-    else
-    {
-        list->current->next->prev = NULL;
-        list->head = list->current->next;
-    }
+    list->current->next->prev = NULL;
+    list->head = list->current->next;
     
     return nodoNuevo->data;
 }
