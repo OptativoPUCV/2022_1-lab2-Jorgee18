@@ -121,7 +121,8 @@ void * popBack(List * list) {
 void * popCurrent(List * list) 
 {
     Node* vector = createNode(list->current->data);
-    list->current->next = list->current->prev;
+    if(list->current->next == NULL)
+        list->current->next = list->current->prev;
     list->current = list->current->next;
 
     
