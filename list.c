@@ -120,7 +120,8 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) 
 {
-    Node* nodoNuevo = list->current;
+    Node* nodoNuevo = createNode(list->current->data);
+    
     if(list->current != list->head)
     {
         if(list->current != list->tail)
