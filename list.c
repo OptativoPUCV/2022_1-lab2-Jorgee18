@@ -125,11 +125,12 @@ void * popCurrent(List * list)
         list->current = list->current->next;
     }
     list->current->prev = list->current;
+    Node* vector = createNode(list->current->data);
     
     free(list->current);
     list->current = list->head;
 
-    return list->current->data;
+    return vector->data;
 }
 
 void cleanList(List * list) {
