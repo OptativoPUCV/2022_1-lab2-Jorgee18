@@ -121,10 +121,11 @@ void * popBack(List * list) {
 void * popCurrent(List * list) 
 {
     Node* nodoNuevo = createNode(list->current->data);
-    list->current->prev = list->current;
-    list->current->prev = list->current->next;
+    nodoNuevo = list->current;
+    list->current->prev = nodoNuevo->next;
 
     free(list->current);
+
     
     return nodoNuevo->data;
 }
