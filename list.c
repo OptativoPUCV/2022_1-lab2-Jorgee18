@@ -120,14 +120,13 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) 
 {
-    Node* vector = createNode(list->current->data);
-    if(list->current->next == NULL)
-        list->current->prev = list->current;
-    list->current->prev = list->current;
-    list->current = list->head;
+    Node* nodoNuevo = createNode(list->current->data);
+    nodoNuevo->prev = list->current;
+    list->current->prev = list->current->next;
+
     free(list->current);
     
-    return vector->data;
+    return nodoNuevo->data;
 }
 
 void cleanList(List * list) {
