@@ -124,9 +124,8 @@ void * popCurrent(List * list)
     if(list->current->next == NULL)
         list->current->prev = list->current;
     
-    
     free(list->current);
-    list->current = list->head;
+    list->current->next = list->head;
     return vector->data;
 }
 
